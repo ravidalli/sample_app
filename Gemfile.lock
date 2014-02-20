@@ -55,7 +55,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
+    nokogiri (1.6.1-x86-mingw32)
+      mini_portile (~> 0.5.0)
     pg (0.17.1-x86-mingw32)
     polyglot (0.3.4)
     rack (1.4.5)
@@ -115,6 +118,10 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    webrat (0.7.3)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   x86-mingw32
@@ -129,3 +136,4 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
+  webrat
