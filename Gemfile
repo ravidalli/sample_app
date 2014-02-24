@@ -45,10 +45,12 @@ gem 'autotest-rails', :group => [:development, :test]
 group :development do
   gem 'autotest-rails'  
   gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :test do
   gem 'autotest-rails'  
   gem 'rspec-rails'
+  gem 'capybara'
 end
 
