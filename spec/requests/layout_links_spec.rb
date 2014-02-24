@@ -1,18 +1,23 @@
 require 'spec_helper'
+#include Rails.application.routes.url_helpers
 
 describe "LayoutLinks" do
   it "should have a home page"  do
-    get '/'
-    response.should have_selector('title', :key => "Home")
+    visit root_path # Capybara maynot be working so use rspec
+    #get root_path
+    response.should have_selector('title', :content => "Home")
   end
-  it "should have a help page" do
-    get '/help'
-    response.should have_selector('title', :key => "Help")
-  end
-  it "should have a contact" do
-    get '/contact'
-    response.should have_selector('title', :key => "Contact")
-  end     
+
   
+  it "should have a help page" do
+     visit help_path
+    response.should have_selector('title', :content => "Help")
+  end
+  
+  it "should have a contact" do
+    visit contact_path
+    response.should have_selector('title', :content => "Contact")
+  end     
+
 end
 
