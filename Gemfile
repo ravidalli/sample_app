@@ -46,6 +46,7 @@ group :development do
   gem 'autotest-rails'  
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'annotate'
 end
 
 group :test do
