@@ -9,7 +9,7 @@ gem 'rails', '3.2.12'
 gem 'pg'
 gem 'rspec-autotest'
 gem 'webrat'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '3.0.1'
 
 # Gems used only for assets and not required
@@ -48,11 +48,13 @@ group :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'annotate'
+  gem 'factory_girl_rails'
 end
 
 group :test do
   gem 'autotest-rails'  
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
