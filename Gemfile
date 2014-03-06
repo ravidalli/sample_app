@@ -56,5 +56,6 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'bcrypt-ruby', '3.0.1'
 end
 
